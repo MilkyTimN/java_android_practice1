@@ -24,6 +24,10 @@ public class Main {
 
         System.out.println(isBetweenTenAndTwenty(firstNum, secondNum));
 
+        int num = -1;
+
+        isPositive(num);
+
     }
     public static float calculator(float a, float b, float c, float d) {
         float result = a * (b + (c / d));
@@ -37,6 +41,13 @@ public class Main {
             isTrue = true;
         }
         return isTrue;
+    }
+    public static void isPositive(int num){
+        if (num < 0) {
+            System.out.println("The number " + num + " is negative");
+        } else {
+            System.out.println("The number " + num + " is positive");
+        }
     }
 }
 
