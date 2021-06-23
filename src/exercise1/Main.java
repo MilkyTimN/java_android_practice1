@@ -17,11 +17,26 @@ public class Main {
         float c = 9.12f;
         float d = 71.0f;
 
+        System.out.println(calculator(a, b, c, d));
+
+        int firstNum = 10;
+        int secondNum = 5;
+
+        System.out.println(isBetweenTenAndTwenty(firstNum, secondNum));
 
     }
-    public float calculator(float a, float b, float c, float d) {
+    public static float calculator(float a, float b, float c, float d) {
         float result = a * (b + (c / d));
         return result;
+    }
+
+    public static boolean isBetweenTenAndTwenty(int firstNum, int secondNum) {
+        int sum = firstNum + secondNum;
+        boolean isTrue = false;
+        if (sum >=10 && sum <= 20) {
+            isTrue = true;
+        }
+        return isTrue;
     }
 }
 
