@@ -36,6 +36,9 @@ public class Main {
 
         hiName(name);
 
+        int year = 2000;
+        leapYear(year);
+
     }
     public static float calculator(float a, float b, float c, float d) {
         float result = a * (b + (c / d));
@@ -68,6 +71,17 @@ public class Main {
 
     public static void hiName(String name) {
         System.out.println("Привет, " + name + "!");
+    }
+
+    public static void leapYear(int year) {
+
+        if (year % 4 == 0 && year % 100 != 0) {
+            System.out.println(year + " is leap year");
+        } else if (year % 100 == 0 && year % 4 == 0 && year % 400 == 0) {
+            System.out.println(year + " is leap year");
+        } else {
+            System.out.println(year + " is NOT leap year");
+        }
     }
 }
 
