@@ -28,6 +28,10 @@ public class Main {
 
         isPositive(num);
 
+        int number = 4;
+
+        isPositiveBoolean(number);
+
     }
     public static float calculator(float a, float b, float c, float d) {
         float result = a * (b + (c / d));
@@ -48,6 +52,14 @@ public class Main {
         } else {
             System.out.println("The number " + num + " is positive");
         }
+    }
+
+    public static boolean isPositiveBoolean(int number) {
+        boolean isNegative = true;
+        if (number >= 0) {
+            isNegative = false;
+        }
+        return isNegative
     }
 }
 
