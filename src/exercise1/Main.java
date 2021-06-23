@@ -32,6 +32,10 @@ public class Main {
 
         isPositiveBoolean(number);
 
+        String name = "Тимур";
+
+        hiName(name);
+
     }
     public static float calculator(float a, float b, float c, float d) {
         float result = a * (b + (c / d));
@@ -59,7 +63,11 @@ public class Main {
         if (number >= 0) {
             isNegative = false;
         }
-        return isNegative
+        return isNegative;
+    }
+
+    public static void hiName(String name) {
+        System.out.println("Привет, " + name + "!");
     }
 }
 
