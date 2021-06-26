@@ -25,5 +25,25 @@ public class Main2 {
                 array3[i] *= 2;
             }
         }
+
+//ex4
+        int[][] array4 = new int[11][11];
+        for (int i = 0; i < array4.length; i++) {
+            for (int j = 0; j < array4[i].length; j++) {
+                if (i == j) {
+                    array4[i][j] = 1;
+                }
+
+                if (j == array4[i].length - (i + 1)){
+                    array4[i][j] = 1;
+                }
+            }
+        }
+        for (int i = 0; i < array4.length; i++) {
+            for (int j = 0; j < array4[i].length; j++) {
+                System.out.print(array4[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
