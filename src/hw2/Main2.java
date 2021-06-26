@@ -14,5 +14,10 @@ public class Main2 {
         for (int a: array) {
             System.out.println(a);
         }
+//Ex2
+        int[] array2 = new int[8];
+        for (int i = 0, k = 0; i < array2.length; i++, k = i * 3) {
+            array2[i] = k;
+        }
     }
 }
