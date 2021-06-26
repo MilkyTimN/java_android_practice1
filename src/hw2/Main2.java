@@ -39,11 +39,21 @@ public class Main2 {
                 }
             }
         }
-        for (int i = 0; i < array4.length; i++) {
-            for (int j = 0; j < array4[i].length; j++) {
-                System.out.print(array4[i][j] + " ");
+//        for (int i = 0; i < array4.length; i++) {
+//            for (int j = 0; j < array4[i].length; j++) {
+//                System.out.print(array4[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+
+//ex5
+        int[] array5 = {5, 6, 2, 10, 3, 9, 7, 1};
+        int max = array5[0];
+        for (int i = 1; i < array5.length; i++) {
+            if (max < array5[i]) {
+                max = array5[i];
             }
-            System.out.println();
         }
+        System.out.println(max);
     }
 }
