@@ -54,6 +54,14 @@ public class Main2 {
                 max = array5[i];
             }
         }
-        System.out.println(max);
+//      System.out.println(max);
+
+//ex7
+
+    }
+    public static void change(int[]array6, int n) {
+        for (int a: array6) {
+
+        }
     }
 }
